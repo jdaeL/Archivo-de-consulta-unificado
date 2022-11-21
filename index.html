@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Consulta de Archivos Unificados de Universidades</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2965/2965314.png" sizes="192x192">
+</head>
+
+<body>
+    <!-- Fondo de pantalla basado en video en bucle -->
+    <video muted autoplay loop>
+        <source src="./resources/video.mp4" type="video/mp4">
+    </video>
+
+    <div class="container">
+        <form action="cgi-bin/script.pl" method="get">
+            <h1>Consulta</h1>
+            <hr />
+            <h3 style="margin-top: 22px">Rellene los espacios para realizar la consulta</h3>
+
+            <div class="label"><label>Nombre de Universidad:</label></div>
+            <input class="input-cont" type="text" name="nombre" autocomplete="off"><br />
+            <br />
+
+            <div class="label"><label>Periodo Licenciamiento:</label></div>
+            <input class="input-cont" type="text" name="licenciamiento" autocomplete="off"><br />
+            <br />
+
+            <div class="label"><label>Departamento Local:</label></div>
+            <input class="input-cont" type="text" name="denlocal" autocomplete="off"><br />
+            <br />
+
+            <div class="label"><label>Denominación Programa:</label></div>
+            <input class="input-cont" type="text" name="denprograma" autocomplete="off"><br />
+            <br />
+
+            <br>
+            <input type="submit" class="submit" value="Realizar consulta">
+
+        </form>
+    </div>
+
+</body>
+
+</html>
